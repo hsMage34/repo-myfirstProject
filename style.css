@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Ms+Madi&display=swap");
+
+* {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-family: "Ms Madi";
+  border-bottom: 3px solid rgb(137, 161, 197);
+  color: white;
+  background-color: #a4c3d2;
+}
+
+nav a {
+  font-size: 30px;
+  font-family: "Libre Baskerville", cursive;
+  color: white;
+  text-decoration: none;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  background-image: url(./WhatsApp\ Image\ 2022-04-28\ at\ 16.03.55.jpeg);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1020px;
+  border-top: 3px solid rgb(137, 161, 197);
+
+  background: #9fa3cf;
+  background: -webkit-linear-gradient(bottom, #d8d8df, #a4c3d2);
+  background: -o-linear-gradient(bottom, #d8d8df, #a4c3d2);
+  background: -moz-linear-gradient(bottom, #d8d8df, #a4c3d2);
+  background: linear-gradient(bottom, #d8d8df, #a4c3d2);
+}
+
+.interface {
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 20px;
+  background-image: url(./BACKGROUND\ 1.png);
+}
+
+.fliter tbody tr {
+  border-bottom: 1px solid #a4c3d2;
+}
+
+.fliter th,
+.fliter td {
+  padding: 12px 15px;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 25px;
+  margin: 20px;
+  height: 198px;
+  background-color: rgb(255, 255, 255);
+}
+
+th {
+  /* border-radius: 10px 10px 0 0; */
+  padding: 10px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville";
+  background-color: rgb(86, 95, 138);
+}
+
+tr {
+  border-radius: 20px;
+  height: 100px;
+}
+
+td {
+  height: 70px;
+}
+
+.fliter {
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+.fliter tbody tr:nth-of-type(even) {
+  background-color: rgb(235, 235, 235);
+}
+
+input {
+  padding: 10px;
+  font-family: "Libre Baskerville";
+  border: none;
+  border-radius: 5px;
+  border-color: 1px solid rgb(233, 233, 233);
+}
+
+.para-design {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  font-family: "Libre Baskerville";
+  height: 25px;
+  border-radius: 5px;
+  border: 2px solid #9fa3cf;
+  background-color: #c9c9db;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Libre Baskerville";
+  letter-spacing: 1px;
+  color: white;
+  background-color: #c0dfef;
+  border: none;
+  border-radius: 10px;
+}

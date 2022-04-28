@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./LOGO FAVICONS.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
+    <title>Café de la place</title>
+  </head>
+
+  <body>
+    <!-- FROM HEADER -->
+    <!-- *************************** -->
+
+    <header>
+      <nav></nav>
+    </header>
+
+    <!-- FROM HEADER IMAGE! -->
+    <!-- *************************** -->
+
+    <div class="image">
+      <img src="./SECTION-IMAGE.png" />
+    </div>
+
+    <!-- FROM SECTION -->
+    <!-- ARRAY ONE -->
+    <!-- Voici notre première partie de notre tableau, ceci est la partie,
+"mes produits à ajouter", il faut bien vérifier les ID pour nos inputs et boutons pour JS :) -->
+    <!-- *************************** -->
+
+    <section>
+      <div class="interface">
+        <h3 class="title">Mes produits à ajouter</h3>
+        <div class="fliter">
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>AHT</th>
+              <th>PV</th>
+              <th>MHT</th>
+            </tr>
+
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="input"
+                  id="inputName"
+                  placeholder="Name"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="input"
+                  id="inputQuantity"
+                  placeholder="Quantity"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="input"
+                  id="inputAht"
+                  placeholder="AHT"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="input"
+                  id="inputPrixvente"
+                  placeholder="Prix vente"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="input"
+                  id="inputMht"
+                  placeholder="Marge"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th>VTTC</th>
+              <th>Type</th>
+              <th>Degré</th>
+              <th>Ajouter</th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  class="input"
+                  id="inputVttc"
+                  placeholder="VTTC"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="input"
+                  id="inputType"
+                  placeholder="Type"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  class="input"
+                  id="inputDegre"
+                  placeholder="Degré"
+                />
+              </td>
+              <td><button class="button" id="buttonAdd">Ajouter</button></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- ARRAY TWO -->
+        <!-- Voici la deuxième section de notre tableau, qui est "mes produits". -->
+        <!-- *************************** -->
+
+        <div class="fliter">
+          <h3 class="title">Mes produits(modifier, sauvegarder, supprimer)</h3>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>AHT</th>
+              <th>PV</th>
+              <th>MHT</th>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="para-design" id="pName"></p>
+                <input
+                  type="text"
+                  id="inputModifName"
+                  class="input"
+                  placeholder="modifier-nom"
+                />
+              </td>
+              <td>
+                <p class="para-design" id="pQuantity"></p>
+                <input
+                  type="text"
+                  id="inputModifQuantity"
+                  class="input"
+                  placeholder="modifier-quantity"
+                />
+              </td>
+              <td>
+                <p class="para-design" id="pAHT"></p>
+                <input
+                  type="text"
+                  id="inputModifAht"
+                  class="input"
+                  placeholder="modifier-AHT"
+                />
+              </td>
+              <td>
+                <p class="para-design" id="pPV"></p>
+                <input
+                  type="text"
+                  id="inputModifPrixvente"
+                  class="input"
+                  placeholder="modifier-pv"
+                />
+              </td>
+              <td>
+                <p class="para-design" id="pMht"></p>
+                <input
+                  type="text"
+                  id="inputModifMht"
+                  class="input"
+                  placeholder="modifier-marge HT"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th>VTTC</th>
+              <th>Type</th>
+              <th>Degré</th>
+              <th>Save/Delete</th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="para-design" id="pVTTC"></p>
+                <input
+                  type="text"
+                  id="inputModifVttc"
+                  class="input"
+                  placeholder="modifier-pv TTC"
+                />
+              </td>
+              <td>
+                <p class="para-design" id="pType"></p>
+                <input
+                  type="text"
+                  id="inputModifType"
+                  class="input"
+                  placeholder="modifier-type"
+                />
+              </td>
+              <td>
+                <p class="para-design" id="pdegreee"></p>
+                <input
+                  type="text"
+                  id="inputModifDegre"
+                  class="input"
+                  placeholder="modifier-degree"
+                />
+              </td>
+              <td>
+                <p class="para-design">
+                  <i><strong>(Pas de section)</strong></i>
+                </p>
+                <button class="button" id="buttonSave">
+                  <strong>Save</strong>
+                </button>
+              </td>
+              <td>
+                <p class="para-design">
+                  <i><strong>(Pas de section)</strong></i>
+                </p>
+                <button class="button" id="buttonDelete">
+                  <strong>Delete</strong>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- *************************** -->
+    <section></section>
+  </body>
+</html>
